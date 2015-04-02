@@ -1,0 +1,84 @@
+/* this is the grid section */
+
+*, *:after, *:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.mg-full {
+	width: 98%;
+}
+
+.mg-three-quarters {
+	width: 73%;
+}
+
+.mg-two-thirds {
+	width: 64.66%;
+}
+
+.mg-one-third {
+	width: 31.33%;
+}
+
+.mg-one-half {
+	width: 48%;
+}
+
+.mg-one-fourth {
+	width: 23%;
+}
+
+.mg-one-sixth {
+	width: 14.66%;
+}
+
+[class*='mg-'] {
+	float: left;
+}
+
+[class*='mg-'] {
+	margin-right: 2%;
+}
+
+.grid-margin {
+	margin: 2% 0 0 2%;
+}
+
+.grid-margin:last-of-type {
+	margin-bottom: 2%;
+}
+
+.grid-margin:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* this is the style section */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+	background-color: #FBCBA3;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.content-box {
+	position: relative;
+	background-color: #89B5BF;
+	width: 100%;
+	min-height: 200px;
+	border: 2px dashed darkblue;
+	padding: 5px;
+}
+
+p {
+	color: darkblue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
